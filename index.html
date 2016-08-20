@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Practicing</title>
+
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .content {
+            width: 850px;
+            /*background: gray;*/
+            margin: 0 auto;
+        }
+        
+        header {
+            background: lightgray;
+            padding: 6px 0px;
+        }
+        
+        body {
+            /*background: mediumseagreen;*/
+            background-image: url("image/2.jpg");
+        }
+        
+        .footer {
+            padding: 26px 0px;
+            background: lightgray;
+            margin-top: 6px;
+            height: 0px;
+            clear: both;
+        }
+        
+        .box {
+            width: 500px;
+            margin-left: auto;
+            background: lavender;
+            padding: 35px 25px;
+        }
+        
+        form#reg {
+            padding: 6px;
+        }
+        
+        .headzone {
+            padding: 8px 0px;
+        }
+        
+        p.text1 {
+            font-family: sans-serif;
+            font-size: 30px;
+        }
+        
+        p.text2 {
+            font-size: 16px;
+            font-family: sans-serif;
+            margin-top: 5px;
+        }
+        
+        p.text3 {
+            font-size: 16px;
+            font-family: sans-serif;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        
+        .textinput {
+            /*background: blueviolet;*/
+        }
+        
+        .textinput1 {
+            /*background: yellow;*/
+        }
+        
+        input.t1 {
+            padding: 10px 30px;
+            border-radius: 5px;
+            margin: 5px 0px;
+        }
+        
+        input.t2 {
+            padding: 10px 30px;
+            border-radius: 5px;
+            margin: 5px 0px;
+            width: 404px;
+        }
+        
+        input.t2::-webkit-input-placeholder {
+            padding: 0px;
+        }
+        
+        select {
+            padding: 10px 15px;
+            margin: 12px 0px;
+        }
+        
+        .select {
+            display: inline-block;
+        }
+        
+        .bselect {
+            display: inline-block;
+        }
+        
+        .btext {
+            display: inline-block;
+            width: 228px;
+            font-size: 12px;
+        }
+        
+        .ftext {
+            padding: 12px 0px;
+            width: 469px;
+        }
+        
+        button {
+            padding: 12px 78px;
+            border-radius: 5px;
+            color: white;
+            background: teal;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="content">
+            <h2>Hello World!</h2>
+        </div>
+    </header>
+    <section>
+        <form method="post" id="reg" name="reg" action="">
+            <div class="content">
+                <div class="box">
+
+                    <div class="headzone">
+                        <p class="text1">Sign Up</p>
+
+                        <p class="text2">it's free and always will be.</p>
+                    </div>
+
+                    <div class="textinput">
+                        <div class="textinput1">
+                            <input type="text" class="t1" name="firstname" placeholder="First name">
+                            <input type="text" class="t1" name="lastname" placeholder="Last name">
+                        </div>
+
+                        <div class="textinput2">
+
+                            <input type="text" class="t2" name="lastname" aria-required="1" placeholder="Last name">
+
+                            <input type="text" class="t2" name="reg_email" aria-required="1" placeholder="Mobile number or email address">
+
+                            <input type="text" class="t2" name="reg_email_confirmation" aria-required="1" placeholder="Re-enter mobile number or email address">
+
+                            <input type="text" class="t2" name="reg_passwd" aria-required="1" placeholder="New password">
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="text2">Birthday</p>
+                    </div>
+                    <div class="select">
+                        <div class="bselect">
+                            <span>
+				<span><select aria-label="Day" name="birthday_day" id="day" title="Day" >
+						<option value="0" selected="1">Day</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+					  </select>
+
+					  <select aria-label="Month" name="birthday_month" id="month" title="Month" >
+						<option value="0" selected="1">Month</option>
+						<option value="1">Jan</option>
+						<option value="2">Feb</option>
+						<option value="3">Mar</option>
+						<option value="4">Apr</option>
+						<option value="5">May</option>
+						<option value="6">Jun</option>
+						<option value="7">Jul</option>
+						<option value="8">Aug</option>
+						<option value="9">Sept</option>
+						<option value="10">Oct</option>
+						<option value="11">Nov</option>
+						<option value="12">Dec</option>
+					  </select>
+
+					  <select aria-label="Year" name="birthday_year" id="year" title="Year" >
+					   <option value="0" selected="1">Year</option>
+					   <option value="2016">2016</option>
+					   <option value="2015">2015</option>
+					   <option value="2014">2014</option>
+					   <option value="2013">2013</option>
+					  </select>
+				</span>
+                            </span>
+                        </div>
+                        <div class="btext">
+                            <a title="Click for more information">
+                                <p class="ptext">Why do I need to provide my date of
+                                    <br>birth?</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span>
+    		<span>
+    		 	<input type="radio" name="sex" value="1" >
+    		 	<label >Female</label>
+    		</span>
+                        <span>
+				<input type="radio" name="sex" value="2" >
+				<label >Male</label>
+			</span>
+                        </span>
+
+                    </div>
+
+                    <div class="ftext">
+                        <p class="text3">By clicking Sign Up, you agree to our <a href="" target="_blank">Terms</a> and that you have read our <a href="" target="_blank">Data Policy</a>, including our <a href="" target="_blank">Cookie Use</a>.</p>
+
+                    </div>
+
+                    <div>
+                        <button type="submit" name="websubmit">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <div class="footer">
+    </div>
+
+</body>
+
+</html>
